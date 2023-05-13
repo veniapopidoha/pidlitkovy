@@ -4,7 +4,6 @@ import boys from '../../img/boys.png';
 export const MainPage = () => {
   return (
     <Background>
-  
       <Wrap>
         <Text data-aos-duration='2000' data-aos='fade-up'>
           Департамент

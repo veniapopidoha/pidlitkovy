@@ -10,6 +10,12 @@ export const Background = styled.div`
   align-items: center;
   width: 100vw;
   height: 100vh;
+  @media screen and (max-width: 768px) {
+    height: 60vh;
+  }
+  @media screen and (max-width: 480px) {
+    height: 40vh;
+  }
 `;
 
 export const Text = styled.h2`
@@ -20,6 +26,20 @@ export const Text = styled.h2`
   text-align: center;
   color: #212042;
   width: 70%;
+  @media screen and (max-width: 1024px) {
+    width: 65%;
+    font-size: 22px;
+  }
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+    width: 80%;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 8px;
+  }
 `;
 
 export const Button = styled.a`
@@ -32,5 +52,17 @@ export const Button = styled.a`
   margin-top: 20px;
   text-align: center;
   cursor: pointer;
-
+  @media screen and (max-width: 1024px) {
+    padding: 10px 100px;
+    font-size: 14px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+    padding: 8px 70px;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+    padding: 5px 60px;
+    margin-top: 10px;
+  }
 `;

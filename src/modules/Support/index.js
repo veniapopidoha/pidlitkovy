@@ -1,9 +1,9 @@
 import { Title } from '../Components/Title';
 import { Background, Button, Text } from './style';
 
-export const Support = () => {
+export const Support = (props) => {
   return (
-    <Background>
+    <Background id={props.id}>
       <Title data-aos-duration='1000' data-aos='fade-up'>
         ПОЖЕРТВУВАННЯ
       </Title>

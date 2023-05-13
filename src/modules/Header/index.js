@@ -4,9 +4,9 @@ export const Header = () => {
   return (
     <Wrap>
       <A href='#goals'>Наші Цілі</A>
-      <A href='#goals'>Бачення</A>
-      <A href='#goals'>Охоплення</A>
-      <A href='#goals'>Пожертвування</A>
+      <A href='#vision'>Бачення</A>
+      <A href='#auditory'>Охоплення</A>
+      <A href='#support'>Пожертвування</A>
     </Wrap>
   );
 };

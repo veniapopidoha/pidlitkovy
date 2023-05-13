@@ -63,7 +63,7 @@ export const Holovna = () => {
         icon3={teacher}
         text3={'Показати власний приклад'}
       />
-      <Support />
+      <Support id='support'/>
       <Footer />
     </>
   );
