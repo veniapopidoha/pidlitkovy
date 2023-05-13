@@ -1,34 +1,32 @@
 import { Card } from '../Components/Card';
 import { Title } from '../Components/Title';
 import { Background, CardWrap } from './style';
-import student from '../../img/student.png';
-import group from '../../img/group.png';
-import teacher from '../../img/teacher.png';
 
-export const Goals = () => {
+
+export const Goals = (props) => {
   return (
-    <Background>
+    <Background bg={props.bg} id={props.id}>
       <Title data-aos-duration='1000' data-aos='fade-up'>
-        НАШІ ЦІЛІ
+        {props.title}
       </Title>
       <CardWrap >
         <Card
           $delay={500}
           $color={1}
-          $text='Ми робимо послідовниками Ісуса Христа дітей та підлітків України.'
-          $img={student}
+          $text={props.text1}
+          $img={props.icon1}
         />
         <Card
           $delay={1000}
           $color={2}
-          $text='Служити насправді – а не тільки «євангелізувати».'
-          $img={group}
+          $text={props.text2}
+          $img={props.icon2}
         />
         <Card
           $delay={1500}
           $color={3}
-          $text='Показати власний приклад'
-          $img={teacher}
+          $text={props.text3}
+          $img={props.icon3}
         />
       </CardWrap>
     </Background>
