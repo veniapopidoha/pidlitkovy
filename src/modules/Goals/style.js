@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
-  ${({ bg }) => (`background-image: url(${bg}) `)};
+  ${({ bg }) => `background-image: url(${bg}) `};
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
@@ -20,4 +20,9 @@ export const Background = styled.div`
 export const CardWrap = styled.div`
   display: flex;
   flex-direction: row;
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 `;

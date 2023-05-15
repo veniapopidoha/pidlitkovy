@@ -8,13 +8,14 @@ export const Background = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   align-items: center;
+  justify-content: center;
   width: 100vw;
   height: 100vh;
   @media screen and (max-width: 768px) {
     height: 60vh;
   }
   @media screen and (max-width: 480px) {
-    height: 40vh;
+    height: 50vh;
   }
 `;
 
@@ -39,6 +40,10 @@ export const Text = styled.h2`
   }
   @media screen and (max-width: 480px) {
     font-size: 8px;
+  }
+  @media screen and (max-width: 375px) {
+    font-size: 7px;
+    width: 90%;
   }
 `;
 

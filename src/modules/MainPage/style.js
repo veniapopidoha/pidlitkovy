@@ -37,8 +37,14 @@ export const Text = styled.h1`
   @media screen and (max-width: 768px) {
     font-size: 20px;
   }
+  @media screen and (max-width: 480px) {
+    text-align: center;
+    padding: 0;
+    margin-top: 20px;
+  }
   @media screen and (max-width: 375px) {
     font-size: 18px;
+    margin-top: 15px;
   }
 `;
 
@@ -52,6 +58,7 @@ export const Wrap = styled.div`
     height: 60vh;
   }
   @media screen and (max-width: 480px) {
+    flex-direction: column;
     height: 50vh;
   }
 `;
@@ -73,11 +80,12 @@ export const Boys = styled.img`
     transform: scale(0.2);
   }
   @media screen and (max-width: 480px) {
-    right: 320px;
-    transform: scale(0.18);
+    right: 0;
+    top: -200px;
+    margin-right: 0;
+    transform: scale(0.25);
   }
   @media screen and (max-width: 375px) {
-    right: 350px;
-    transform: scale(0.15);
+    transform: scale(0.22);
   }
 `;

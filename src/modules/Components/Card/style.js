@@ -11,6 +11,17 @@ export const Wrap = styled.div`
   @media screen and (max-width: 768px) {
     margin: 5px;
   }
+  @media screen and (max-width: 480px) {
+    margin: 0 15px;
+    :last-child {
+      margin-bottom: 50px;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    :last-child {
+      margin-bottom: 30px;
+    }
+  }
 `;
 
 export const Box = styled.div`
@@ -40,8 +51,12 @@ export const Box = styled.div`
     height: 100px;
   }
   @media screen and (max-width: 480px) {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 100px;
+    height: 100px;
   }
 `;
 
@@ -69,9 +84,13 @@ export const Text = styled.h2`
     width: 100px;
     font-size: 8px;
   }
+  @media screen and (max-width: 480px) {
+    font-size: 10px;
+    width: 120px;
+  }
   @media screen and (max-width: 375px) {
-    font-size: 6px;
-    width: 80px;
+    font-size: 9px;
+    width: 100px;
   }
 `;
 
@@ -85,6 +104,9 @@ export const Img = styled.img`
     width: 50px;
   }
   @media screen and (max-width: 480px) {
-    width: 30px;
+    width: 60px;
+  }
+  @media screen and (max-width: 375px) {
+    width: 40px;
   }
 `;
