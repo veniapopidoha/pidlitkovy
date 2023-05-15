@@ -12,7 +12,7 @@ export const Wrap = styled.div`
     margin: 5px;
   }
   @media screen and (max-width: 480px) {
-    margin: 0 15px;
+    margin: 0 20px;
     :last-child {
       margin-bottom: 50px;
     }
@@ -53,6 +53,7 @@ export const Box = styled.div`
   @media screen and (max-width: 480px) {
     width: 120px;
     height: 120px;
+    border-radius: 15%;
   }
   @media screen and (max-width: 375px) {
     width: 100px;
