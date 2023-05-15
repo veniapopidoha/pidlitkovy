@@ -15,6 +15,8 @@ import group from '../img/group.png';
 import teacher from '../img/teacher.png';
 import { Footer } from './Footer';
 import { Header } from './Header';
+import { SpecialBack } from './Components/SpecialBack/SpecialBack';
+import { FirstBlock } from './Goals/Block';
 
 export const Holovna = () => {
   useEffect(() => {
@@ -24,9 +26,10 @@ export const Holovna = () => {
     <>
       <Header />
       <MainPage />
-      <Goals
+      {/* <SpecialBack/> */}
+      <FirstBlock
         id='goals'
-        bg={bg}
+        // bg={bg}
         title={'Наші Цілі'}
         icon1={student}
         text1={
@@ -63,7 +66,7 @@ export const Holovna = () => {
         icon3={teacher}
         text3={'Показати власний приклад'}
       />
-      <Support id='support'/>
+      <Support id='support' />
       <Footer />
     </>
   );
