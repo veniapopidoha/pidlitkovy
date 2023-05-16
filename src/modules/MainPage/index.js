@@ -6,13 +6,11 @@ export const MainPage = () => {
     <Background>
       <Wrap>
         <Text data-aos-duration='2000' data-aos='fade-up'>
-          Департамент
+          В ІМ'Я
           <br />
-          Служіння
+          МАЙБУТНЬОГО
           <br />
-          Дітям <br />
-          Підліткам
-          <br />
+          ПОКОЛІННЯ
         </Text>
 
         <Boys src={boys} />

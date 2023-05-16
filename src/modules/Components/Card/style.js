@@ -87,11 +87,11 @@ export const Text = styled.h2`
   }
   @media screen and (max-width: 480px) {
     font-size: 10px;
-    width: 120px;
+    width: 150px;
   }
   @media screen and (max-width: 375px) {
     font-size: 9px;
-    width: 100px;
+    width: 120px;
   }
 `;
 

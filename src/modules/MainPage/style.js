@@ -23,19 +23,22 @@ export const Text = styled.h1`
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 70px;
-  padding: 60px;
+  font-size: 50px;
+  padding: 0;
   color: #212042;
+  display: block;
+  width: 50vw;
   @media screen and (max-width: 1200px) {
     font-size: 50px;
-    padding: 30px 0 30px 30px;
+    padding-left: 25vw;
   }
   @media screen and (max-width: 1024px) {
     font-size: 40px;
-    padding: 30px 0 30px 30px;
+    padding-left: 70vw;
   }
   @media screen and (max-width: 768px) {
     font-size: 20px;
+    padding-left: 20vw;
   }
   @media screen and (max-width: 480px) {
     text-align: center;
@@ -51,11 +54,12 @@ export const Text = styled.h1`
 export const Wrap = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   @media screen and (max-width: 768px) {
     height: 60vh;
+    justify-content: space-between;
   }
   @media screen and (max-width: 480px) {
     flex-direction: column;
@@ -64,19 +68,19 @@ export const Wrap = styled.div`
 `;
 
 export const Boys = styled.img`
-  transform: scale(0.8);
+  transform: scale(0.6);
   @media screen and (max-width: 1200px) {
     transform: scale(0.45);
-    margin-right: 50px;
+    position: relative;
+    right: 150px;
   }
   @media screen and (max-width: 1024px) {
-    position: relative;
-    right: 130px;
+    right: 270px;
     transform: scale(0.3);
     margin-right: 30px;
   }
   @media screen and (max-width: 768px) {
-    right: 250px;
+    right: 300px;
     transform: scale(0.2);
   }
   @media screen and (max-width: 480px) {

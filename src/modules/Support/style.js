@@ -27,6 +27,11 @@ export const Text = styled.h2`
   text-align: center;
   color: #212042;
   width: 70%;
+  p {
+    text-align: left;
+    text-indent: 20px !important;
+    margin: 0;
+  }
   @media screen and (max-width: 1024px) {
     width: 65%;
     font-size: 22px;
@@ -40,6 +45,10 @@ export const Text = styled.h2`
   }
   @media screen and (max-width: 480px) {
     font-size: 8px;
+    width: 90%;
+    p {
+    text-indent: 8px !important;
+  }
   }
   @media screen and (max-width: 375px) {
     font-size: 7px;
@@ -65,9 +74,9 @@ export const Button = styled.a`
     font-size: 12px;
     padding: 8px 70px;
   }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 480px) {
     font-size: 10px;
-    padding: 5px 60px;
-    margin-top: 10px;
+    padding: 3px 60px;
+    margin-top: 5px;
   }
 `;

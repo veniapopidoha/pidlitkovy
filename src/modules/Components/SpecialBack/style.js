@@ -14,7 +14,7 @@ export const Img = styled.img`
     height: 30vh;
   }
   @media screen and (max-width: 480px) {
-    height: fit-content;
+    height: 25vh;
   }
 `;
 
