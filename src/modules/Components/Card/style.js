@@ -59,6 +59,10 @@ export const Box = styled.div`
     width: 100px;
     height: 100px;
   }
+  @media screen and (max-width: 320px) {
+    width: 80px;
+    height: 80px;
+  }
 `;
 
 export const Text = styled.h2`
@@ -93,6 +97,10 @@ export const Text = styled.h2`
     font-size: 9px;
     width: 120px;
   }
+  @media screen and (max-width: 320px) {
+    width: 100px;
+    font-size: 7px;
+  }
 `;
 
 export const Img = styled.img`
@@ -109,5 +117,8 @@ export const Img = styled.img`
   }
   @media screen and (max-width: 375px) {
     width: 40px;
+  }
+  @media screen and (max-width: 320px) {
+    width: 30px;
   }
 `;

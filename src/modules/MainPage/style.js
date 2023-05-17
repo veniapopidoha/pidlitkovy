@@ -24,13 +24,13 @@ export const Text = styled.h1`
   font-style: normal;
   font-weight: 700;
   font-size: 50px;
-  padding: 0;
+  padding-left: 25vw;
   color: #212042;
   display: block;
   width: 50vw;
   @media screen and (max-width: 1200px) {
-    font-size: 50px;
-    padding-left: 25vw;
+    font-size: 45px;
+    /* padding-left: 60vw; */
   }
   @media screen and (max-width: 1024px) {
     font-size: 40px;
@@ -44,10 +44,21 @@ export const Text = styled.h1`
     text-align: center;
     padding: 0;
     margin-top: 20px;
+    display: none;
+    font-size: 18px;
   }
   @media screen and (max-width: 375px) {
-    font-size: 18px;
+    font-size: 16px;
     margin-top: 15px;
+  }
+`;
+
+export const TextMobile = styled(Text)`
+  display: none;
+  width: 80vw;
+  text-align: center;
+  @media screen and (max-width: 480px) {
+    display: block;
   }
 `;
 
@@ -69,9 +80,11 @@ export const Wrap = styled.div`
 
 export const Boys = styled.img`
   transform: scale(0.6);
+  position: relative;
+  right: 170px;
+  margin-left: 80px;
   @media screen and (max-width: 1200px) {
     transform: scale(0.45);
-    position: relative;
     right: 150px;
   }
   @media screen and (max-width: 1024px) {
@@ -82,14 +95,15 @@ export const Boys = styled.img`
   @media screen and (max-width: 768px) {
     right: 300px;
     transform: scale(0.2);
+    margin-left: 0;
   }
   @media screen and (max-width: 480px) {
     right: 0;
-    top: -200px;
+    top: -190px;
     margin-right: 0;
-    transform: scale(0.25);
+    transform: scale(0.35);
   }
   @media screen and (max-width: 375px) {
-    transform: scale(0.22);
+    transform: scale(0.3);
   }
 `;

@@ -1,4 +1,11 @@
-import { AvatarConteiner, Background, Boys, Text, Wrap } from './style';
+import {
+  AvatarConteiner,
+  Background,
+  Boys,
+  Text,
+  TextMobile,
+  Wrap,
+} from './style';
 import boys from '../../img/boys.png';
 
 export const MainPage = () => {
@@ -12,6 +19,11 @@ export const MainPage = () => {
           <br />
           ПОКОЛІННЯ
         </Text>
+        <TextMobile data-aos-duration='2000' data-aos='fade-up'>
+          В ІМ'Я
+          <br />
+          МАЙБУТНЬОГО ПОКОЛІННЯ
+        </TextMobile>
 
         <Boys src={boys} />
       </Wrap>
