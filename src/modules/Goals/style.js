@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
@@ -29,5 +30,11 @@ export const CardWrap = styled.div`
   @media screen and (max-width: 480px) {
     align-items: center;
     justify-content: center;
+  }
+`;
+
+export const Back2 = styled(Background)`
+  @media screen and (max-width: 480px) {
+    height: 50vh;
   }
 `;
