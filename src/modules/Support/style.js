@@ -58,6 +58,7 @@ export const Text = styled.h2`
 
 export const Button = styled.a`
   background: #212042;
+  text-decoration: none;
   border-radius: 30px;
   font-weight: 700;
   font-family: 'Montserrat', sans-serif;
